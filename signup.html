@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="auth-container">
+
+    <!-- LOGIN -->
+    <div class="form-box" id="loginBox">
+      <h2>Welcome Back</h2>
+      <p class="subtitle">Login to continue</p>
+
+      <input type="email" id="li_email" placeholder="Email">
+      <input type="password" id="li_password" placeholder="Password">
+
+      <button onclick="login()">Login</button>
+
+      <p class="switch-text">
+        Don’t have an account?
+        <span onclick="showSignup()">Sign up</span>
+      </p>
+    </div>
+
+    <!-- SIGNUP -->
+    <div class="form-box" id="signupBox" style="display:none;">
+      <h2>Create Account</h2>
+      <p class="subtitle">Signup to get started</p>
+
+      <input type="text" id="su_username" placeholder="Username">
+      <input type="email" id="su_email" placeholder="Email">
+      <input type="password" id="su_password" placeholder="Password">
+
+      <button onclick="signup()">Sign Up</button>
+
+      <p class="switch-text">
+        Already have an account?
+        <span onclick="showLogin()">Login</span>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
